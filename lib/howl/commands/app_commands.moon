@@ -756,7 +756,7 @@ search_input_list = (opts) ->
     matcher = howl.util.Matcher locations
     list = howl.ui.List matcher
     list_buf = howl.ui.ListBuffer list, {
-      title: "#{#locations} matches for '#{search}' in #{directory.short_path} (using #{searcher.name} searcher)"
+      title: "#{#locations} matches for '#{search}' (#{searcher.name})"
       on_submit: (location) ->
         app\open location
     }
